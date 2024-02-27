@@ -21,7 +21,7 @@ img {
   margin-inline-end: 0.5rem;
 }
 .weather-card {
-  width: 500px;
+  /* width: 500px; */
   background: #ffff;
   display: flex;
   flex-direction: column;
