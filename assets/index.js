@@ -19,8 +19,6 @@ async function getWeather(lat, lon) {
     temp.textContent = data.main.temp;
     maxTemp.textContent = data.main.temp_max;
     minTemp.textContent = data.main.temp_min;
-
-    console.log(data);
   } catch (error) {
     console.error("Erreur de récupération :", error);
   }
