@@ -35,10 +35,12 @@ async function getCoordsLocation() {
 
 async function init() {
   try {
-    coordsLocation = await getCoordsLocation();
-    latitude = coordsLocation.latitude;
-    longitude = coordsLocation.longitude;
-    await getWeather(latitude, longitude);
+    if (coordsLocation) {
+      latitude = coordsLocation.latitude;
+      longitude = coordsLocation.longitude;
+      await getWeather(latitude, longitude);
+    }
+    console.error("Erreur : Localisation non disponible.");
   } catch (error) {
     console.error(error);
   }
