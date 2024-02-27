@@ -16,6 +16,10 @@ body {
   justify-content: center;
   background-color: whitesmoke;
 }
+img {
+  width: 20%;
+  margin-inline-end: 0.5rem;
+}
 .weather-card {
   width: 500px;
   background: #ffff;
@@ -54,4 +58,44 @@ h3 {
   font-size: 2rem;
   font-weight: 600;
   width: 100%;
+}
+
+@media screen and (max-width: 280px) {
+  .container {
+    width: 100%;
+    margin: 10px;
+  }
+  .weather-card {
+    width: 100%;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  img {
+    width: 20%;
+    margin-inline-end: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 281px) and (max-width: 540px) {
+  .container {
+    width: 100%;
+    margin: 10px;
+  }
+  .weather-card {
+    width: 100%;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  img {
+    width: 20%;
+    margin-inline-end: 0.5rem;
+  }
 }
