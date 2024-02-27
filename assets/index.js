@@ -35,6 +35,7 @@ async function getCoordsLocation() {
 
 async function init() {
   try {
+    coordsLocation = await getCoordsLocation();
     if (coordsLocation) {
       latitude = coordsLocation.latitude;
       longitude = coordsLocation.longitude;
